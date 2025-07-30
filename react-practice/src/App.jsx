@@ -5,18 +5,26 @@ import Greetings from './components/Greetings';
 import GreetingsClassBased from './components/GreetingsClassBased';
 import ChangeHeading from './components/ChangeHeading';
 import Calculator from './components/Calculator';
+import Vegetables from './components/Vegetables';
+import ContactForm from './components/ContactForm/ContactForm';
 
 function App() {
   const [jobTitle, setJobTitle] = useState('FullStack Developer');
 
   return (
-    <div className="container">
+   
 
+<>
+      <ContactForm/>
+      <Vegetables/>
+
+      <div className="container">
+       <Fruits />
       <Calculator />
       <ChangeHeading />
-      <Fruits />
       <Greetings studName="Punam" marks={95} />
       <GreetingsClassBased studName="Punam" />
+
 
       <div className="section text-center">
         <h3>
@@ -27,7 +35,9 @@ function App() {
         </button>
       </div>
     </div>
+    </>
   );
 }
+
 
 export default App;
