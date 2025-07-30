@@ -7,6 +7,7 @@ import ChangeHeading from './components/ChangeHeading';
 import Calculator from './components/Calculator';
 import Vegetables from './components/Vegetables';
 import ContactForm from './components/ContactForm/ContactForm';
+import fruitsData from '../data.js'
 
 function App() {
   const [jobTitle, setJobTitle] = useState('FullStack Developer');
@@ -15,6 +16,7 @@ function App() {
    
 
 <>
+    <fruitsData/>
       <ContactForm/>
       <Vegetables/>
 
